@@ -149,5 +149,9 @@ h3 {
   }
   .about-container, .contact-container, .projects-container {
     width: 90vw;
+    height: auto;
+  }
+  .social-media-btn {
+    width: 2rem;
   }
 }

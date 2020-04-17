@@ -20,9 +20,9 @@ const ContactContainer = () => {
         
       </div> 
       <p>If you want to connect with me on social media, I'm fairly active on Twitter, LinkedIn, and of course GitHub.</p>
-
+      <br/>
       <p>To contact me with regards to new opportunities, you can email me at katya.p.1129 AT gmail DOT com.</p>
-
+      <br/>
       <p>You can also reach me at 480 - 420 - 7378 (call or text is fine).</p>
         </div>
     )
