@@ -1,4 +1,4 @@
-.app {
+/* .app {
   text-align: center;
   min-height: 100vh; 
   background: rgb(6,0,11);
@@ -165,4 +165,38 @@ h3 {
   .social-media-btn {
     width: 2rem;
   }
+} */
+
+body {
+  background-color: #000;
+}
+
+.view {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  overflow: hidden;
+  
+  /* background-image: linear-gradient(180deg, #3e1851, #b65d9b, #fdbca2, #fe9677); 
+  -webkit-background-image: linear-gradient(180deg, #3e1851, #b65d9b, #fdbca2, #fe9677); */
+ 
+  background-image: linear-gradient(180deg, #000, #1e1e2e, #26324f);
+  -webkit-background-image: linear-gradient(180deg, #000, #1e1e2e, #26324f); 
+}
+
+.mountain1 {
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0, 0, 0, 0));
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0, 0, 0, 0));
+}
+.mountain2 {
+  position: absolute;
+  transform: scaleX(-1);
+  left: 0;
+  bottom: -30px;
+  z-index: 0;
+  width: 100%;
+  height: auto;
 }
