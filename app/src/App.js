@@ -10,6 +10,8 @@ import AboutContainer from "./components/AboutContainer";
 import ProjectsContainer from "./components/ProjectsContainer";
 import ContactContainer from "./components/ContactContainer";
 
+import Footer from './Footer';
+
 // styles
 import "./App.css";
 import "animate.css";
@@ -61,10 +63,7 @@ function App() {
         />
         <img className="mountain2" src={mountainRange} />
       </div>
-      
-      <div className="footer">
-        <p>©2021. Site built with <span role="img" aria-label="heart">❤️</span> by me </p>
-      </div>
+      <Footer />
     </div>
     </Router>
   );
