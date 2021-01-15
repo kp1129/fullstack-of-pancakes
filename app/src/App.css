@@ -171,7 +171,7 @@ body {
   background-color: #000;
 }
 
-.view {
+.home {
   position: relative;
   height: 80vh;
   width: 100%;
@@ -197,7 +197,6 @@ body {
   transform: scaleX(-1);
   left: 0;
   bottom: 0;
-  /* bottom: -5vh; */
   z-index: 0;
   width: 100%;
   height: auto;
@@ -209,6 +208,10 @@ h1 {
   text-align: center;
   color: white;
   font-size: 40px;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 800;
 }
 
 i {
@@ -240,8 +243,37 @@ i {
   font-size: 1.25em;
   width: 80vw;
   max-width: 1000px;
-  padding: 3em 0;
+  padding: 2em 0;
   margin: 0 auto;
+  line-height: 1.5em;
+  text-justify: newspaper;
+}
+.about > p {
+  margin: 1em 0;
+}
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.photos > span {
+  font-style: italic;
+  font-size: 0.75em;
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+.photos > img {
+  width: 30%;
+  max-width: 300px;
+  height: auto;
+  margin: 0.5em;
+}
+.skills {
+  color: white;
+  font-size: 1.25em;
+  width: 80vw;
+  max-width: 1000px;
+  margin: 20vh auto 10vh;
   line-height: 1.5em;
   text-justify: newspaper;
 }
@@ -256,7 +288,7 @@ i {
 .footer {
   color: white;
   text-align: center;
-  padding: 3em 0;
+  padding: 2em 0;
 }
 .navbar {
   width: 50%;
@@ -267,4 +299,7 @@ i {
 .navbar a {
   color: white;
   text-decoration: none;;
+}
+.twitter-tweet {
+  margin: 0 auto;
 }
