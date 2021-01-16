@@ -25,7 +25,7 @@ function Home() {
   }, []);
   return (
     <div className="home">
-      <h1 class="animate__animated animate__pulse">
+      <h1 className="animate__animated animate__pulse">
         Hi! I'm Katya and I'm a software engineer!
       </h1>
       <img

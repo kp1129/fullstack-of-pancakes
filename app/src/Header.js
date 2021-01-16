@@ -1,10 +1,13 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
+import ModeToggle from './ModeToggle';
 
 function Header() {
   return (
     <div className="header">
-      <div className="theme-toggle">toggle will go here</div>
+      <div className="theme-toggle">
+          {/* <ModeToggle /> */}
+      </div>
       <div className="navbar">
         <NavLink exact to="/">
           HOME

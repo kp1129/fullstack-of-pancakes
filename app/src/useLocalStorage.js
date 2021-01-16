@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 
+// check localStorage for key
+// return value to determine if darkMode is enabled or not
+
+// initialValue is a BOOLEAN
 export const useLocalStorage = ( key, initialValue ) => {
     const [ value, setValue ] = useState(() => {
         // check if key exists in local storage
