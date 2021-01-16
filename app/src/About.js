@@ -22,10 +22,27 @@ function About() {
         I'm based in the sunny Phoenix, Arizona, and I build full stack apps.
       </p>
 
-      <div className="photos">        
-        <img src={photo1} />
-        <img src={photo2} />
-        <img src={photo3} />
+      <div className="photos">
+        <figure>
+          <img src={photo1} alt="monsoon clouds over mountains" />
+          <figcaption>snapped this on a hike in Tucson</figcaption>
+        </figure>
+        <figure>
+          <img src={photo2} alt="sunset in the desert" />
+          <figcaption>an epic place to watch sunsets</figcaption>
+        </figure>
+        <figure>
+          <img
+            src={photo3}
+            alt="Downtown Phoenix from the window of an airplane"
+          />
+          <figcaption>
+            Phoenix from above
+            <span role="img" aria-label="heart">
+              ❤️
+            </span>
+          </figcaption>
+        </figure>
       </div>
 
       <p>
@@ -34,24 +51,24 @@ function About() {
           🎓
         </span>
         Like many college students, all I knew for sure was that I wanted to
-        help people. I picked psychology as my major because, frankly, humans
-        are fascinating. I thought I could fulfill my desire to help people by
-        becoming a therapist. I soon realized that helping people was only part
-        of the puzzle; what I really wanted to do was to research the things we
-        still barely understand and to do something about all the unanswered
-        questions...
+        help people. I thought I could fulfill that desire by becoming a
+        psychologist. Soon I realized that helping people was only part of the
+        puzzle;{" "}
         <span role="img" aria-label="face with monocle">
           🧐
         </span>
+        what I really wanted was to delve into research, to create more
+        effective solutions, and to make sense of the things we still barely
+        understand.
       </p>
 
       <p>
         My desire to explore and innovate brought me to work at Y Combinator
-        startups{" "}
+        startups.{" "}
         <span role="img" aria-label="unicorn">
           🦄
         </span>
-        . There, I helped grow superstar teams that were truly building the
+        There, I helped grow superstar teams that were truly building the
         future! I caught the programming bug instantly.{" "}
         <span role="img" aria-label="laptop">
           💻
@@ -62,9 +79,7 @@ function About() {
         fundamentals, and includes a hackathon-style internship.
       </p>
 
-      {/* <div className="tweet"> */}
       <Tweet className="my-tweet" tweetId="1253452257074352128" />
-      {/* </div> */}
 
       <p>
         Outside of writing code, I like to travel and I read a ton of books.{" "}
@@ -72,9 +87,8 @@ function About() {
           📚
         </span>
         My record so far is 116 books in one year (it was a crazy year). I'm
-        always interested in learning, exploring the unknown, pushing the
-        boundaries of what's possible, and helping people by building the tech
-        of the future.{" "}
+        always exploring something new, and I want to help people by building
+        the tech of the future.{" "}
         <span role="img" aria-label="rocket ship">
           🚀
         </span>

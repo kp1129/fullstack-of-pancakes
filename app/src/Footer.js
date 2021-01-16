@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className="footer">
       <p>
-        ©2021. Site built with{" "}
+        ©2021. Built with{" "}
         <span role="img" aria-label="heart">
           ❤️
         </span>{" "}

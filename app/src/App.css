@@ -253,20 +253,21 @@ i {
 }
 .photos {
   display: flex;
-  flex-wrap: wrap;
-  
+  flex-wrap: wrap;  
 }
-.photos > span {
-  font-style: italic;
-  font-size: 0.75em;
-  justify-self: flex-end;
-  align-self: flex-end;
-}
-.photos > img {
+.photos > figure {
   width: 30%;
   max-width: 300px;
-  height: auto;
   margin: 0.5em;
+}
+figure > img {
+  width: 100%;
+  height: auto;
+}
+figure > figcaption {
+  text-align: center;
+  font-size: 0.75em;
+  font-style: italic;
 }
 .skills {
   color: white;
