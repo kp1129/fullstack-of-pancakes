@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-const useLocalStorage = (key, initialValue) => {
-    const [value, setValue] = useState(() => {
+export const useLocalStorage = ( key, initialValue ) => {
+    const [ value, setValue ] = useState(() => {
         // check if key exists in local storage
         // if not, set value to initialValue
         let item = window.localStorage.getItem(key);
@@ -10,10 +10,10 @@ const useLocalStorage = (key, initialValue) => {
 
     // custom updater function to update value 
     // (associated with this key) in app and localStorage
-    const setStoredValue = (mode) => {
+    const setStoredValue = ( mode ) => {
         setValue(mode);
         window.localStorage.setItem(key, JSON.stringify(mode))
     }
 
-    return [value, setStoredValue];
+    return [ value, setStoredValue ];
 }
