@@ -166,15 +166,7 @@ h3 {
     width: 2rem;
   }
 } */
-body {
-  background-color: #000;
-}
-body-light {
-  background-color: #fff;
-}
-body-dark {
-  background-color: #000;
-}
+
 
 .home {
   position: relative;
@@ -224,9 +216,6 @@ i {
   background: #fff;
   border-radius: 50%;
   animation: animate linear infinite;
-/*   animation-delay: 3s; */
-/*   animation-duration: 5s;
-  animation-delay: 5s; */
 }
 @keyframes animate {
   0% {
@@ -244,7 +233,6 @@ i {
 }
 .about {
   min-height: 100vh;
-  color: white;
   font-size: 1.25em;
   width: 80vw;
   max-width: 1000px;
@@ -275,7 +263,6 @@ figure > figcaption {
   font-style: italic;
 }
 .skills {
-  color: white;
   font-size: 1.25em;
   width: 80vw;
   max-width: 1000px;
@@ -289,10 +276,9 @@ figure > figcaption {
   background-color: transparent;
   display: flex;
   justify-content: space-between;
-  color: white;
+  align-items: center;
 }
 .footer {
-  color: white;
   text-align: center;
   padding: 2em 0;
 }
@@ -303,9 +289,28 @@ figure > figcaption {
   align-items: center;
 }
 .navbar a {
-  color: white;
   text-decoration: none;;
 }
 .twitter-tweet {
   margin: 0 auto;
+}
+.theme-toggle {
+  margin-left: 10px;
+  width: 60px;
+  height: 30px;
+  background-color: salmon;
+  border-radius: 10%;
+  display: flex;
+  cursor: pointer;
+  justify-content: flex-start;
+  transition: justify-content 2s;
+}
+.toggled {
+  justify-content: flex-end;
+}
+.toggle {
+  background-color: #26324f;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }

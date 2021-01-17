@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 import {
   BrowserRouter as Router,
@@ -26,10 +26,29 @@ import "./App.css";
 import "animate.css";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    const styleBody = document.body.style;
+    const links = document.getElementsByTagName("a");
+    if (darkMode) {
+      styleBody.backgroundColor = "#000";
+      styleBody.color = "#fff";
+      for (let i = 0; i < links.length; i++){
+        links[i].style.color = "#fff";
+      }
+    } else {
+      styleBody.backgroundColor = "#fff";
+      styleBody.color = "#000";
+      for (let i = 0; i < links.length; i++){
+        links[i].style.color = "#000";
+      }
+    }
+  }, [darkMode]);
   return (
     <Router>
       <div className="app">
-        <Header />
+        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         <Switch>
           <Route path="/about">
             <About />
