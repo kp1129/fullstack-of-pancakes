@@ -31,8 +31,9 @@ function Home() {
       <img
         className="mountain1 animate__animated animate__fadeInBottomRight"
         src={mountainRange}
+        alt="moutain range"
       />
-      <img className="mountain2" src={mountainRange} />
+      <img className="mountain2" src={mountainRange} alt="moutain range" />
     </div>
   );
 }

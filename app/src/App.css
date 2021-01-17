@@ -170,19 +170,14 @@ h3 {
 
 .home {
   position: relative;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
-  max-width: 1600px;
   overflow: hidden;
-  
-  /* background-image: linear-gradient(180deg, #3e1851, #b65d9b, #fdbca2, #fe9677); 
-  -webkit-background-image: linear-gradient(180deg, #3e1851, #b65d9b, #fdbca2, #fe9677); */
- 
-  background-image: linear-gradient(180deg, #000, #1e1e2e, #26324f);
-  -webkit-background-image: linear-gradient(180deg, #000, #1e1e2e, #26324f); 
 }
-
 .mountain1 {
+  position: absolute;
+  left: 0;
+  bottom: 10vh;
   z-index: 1;
   width: 100%;
   height: auto;
@@ -210,7 +205,6 @@ h2 {
   font-size: 30px;
   font-weight: 800;
 }
-
 i {
   position: absolute;
   background: #fff;
@@ -264,16 +258,17 @@ figure > figcaption {
 }
 .skills {
   font-size: 1.25em;
-  width: 80vw;
+  margin: 0 auto;
+  height: 70vh;
   max-width: 1000px;
-  margin: 20vh auto 10vh;
   line-height: 1.5em;
   text-justify: newspaper;
+  display: flex;
+  align-items: center;
 }
 .header {
   height: 10vh;
   max-height: 50px;
-  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -289,18 +284,21 @@ figure > figcaption {
   align-items: center;
 }
 .navbar a {
-  text-decoration: none;;
+  text-decoration: none;
+  color: #fff;
 }
 .twitter-tweet {
   margin: 0 auto;
 }
 .theme-toggle {
   margin-left: 10px;
-  width: 60px;
-  height: 30px;
-  background-color: salmon;
-  border-radius: 10%;
+  width: 65px;
+  height: 35px;
+  background-color: #fe9677;
+  padding: 1px;
+  border-radius: 10px;
   display: flex;
+  align-items: center;
   cursor: pointer;
   justify-content: flex-start;
   transition: justify-content 2s;

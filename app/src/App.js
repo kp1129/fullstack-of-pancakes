@@ -8,13 +8,6 @@ import {
 } from "react-router-dom";
 
 // components
-import ParticlesContainer from "./components/ParticlesContainer";
-import Navbar from "./components/Navbar";
-import HomeContainer from "./components/HomeContainer";
-import AboutContainer from "./components/AboutContainer";
-import ProjectsContainer from "./components/ProjectsContainer";
-import ContactContainer from "./components/ContactContainer";
-
 import Header from "./Header";
 import Home from "./Home";
 import Skills from "./Skills";
@@ -27,34 +20,46 @@ import "animate.css";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
+  const [home, setHome] = useState(true);
 
   useEffect(() => {
     const styleBody = document.body.style;
-    const links = document.getElementsByTagName("a");
+    const styleHomeAnimation = document.getElementsByClassName("home")[0]
+      ?.style;
+    const styleHeader = document.getElementsByClassName("header")[0].style;
+
     if (darkMode) {
       styleBody.backgroundColor = "#000";
       styleBody.color = "#fff";
-      for (let i = 0; i < links.length; i++){
-        links[i].style.color = "#fff";
+      styleHeader.backgroundColor = "transparent";
+      if (home) {
+        styleHomeAnimation.backgroundImage =
+          "linear-gradient(180deg, #000, #1e1e2e, #26324f)";
+        styleHomeAnimation.webkitBackgroundImage =
+          "linear-gradient(180deg, #000, #1e1e2e, #26324f)";
       }
-    } else {
+    } else if (!darkMode) {
       styleBody.backgroundColor = "#fff";
       styleBody.color = "#000";
-      for (let i = 0; i < links.length; i++){
-        links[i].style.color = "#000";
+      styleHeader.backgroundColor = "#3e1851";
+      if (home) {
+        styleHomeAnimation.backgroundImage =
+          "linear-gradient(180deg, #3e1851, #b65d9b, #fdbca2, #fe9677)";
+        styleHomeAnimation.webkitBackgroundImage =
+          "linear-gradient(180deg, #3e1851, #b65d9b, #fdbca2, #fe9677)";
       }
     }
-  }, [darkMode]);
+  }, [darkMode, home]);
   return (
     <Router>
       <div className="app">
-        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Header darkMode={darkMode} setDarkMode={setDarkMode} setHome={setHome}/>
         <Switch>
           <Route path="/about">
             <About />
           </Route>
           <Route path="/">
-            <Home />
+            <Home  />
             <Skills />
           </Route>
         </Switch>
