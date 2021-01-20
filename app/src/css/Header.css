@@ -16,6 +16,28 @@
   color: #fff;
   font-size: 1.5rem;
 }
+.theme-toggle {
+    margin-left: 10px;
+    width: 65px;
+    height: 35px;
+    background-color: #fe9677;
+    padding: 1px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: flex-start;
+    transition: justify-content 2s;
+  }
+  .toggled {
+    justify-content: flex-end;
+  }
+  .toggle {
+    background-color: #26324f;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
 /* MEDIA QUERIES */
 /* tablet */
 @media (max-width: 800px) {

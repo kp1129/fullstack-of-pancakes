@@ -63,10 +63,16 @@ i {
   h1 {
     font-size: 3.5rem;
   }
+  .mountain1 {
+      bottom: 5vh;
+  }
 }
 /* mobile */
 @media (max-width: 600px) {
   h1 {
     font-size: 3rem;
   }
+  .mountain1 {
+    bottom: 3vh;
+}
 }

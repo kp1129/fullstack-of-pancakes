@@ -16,9 +16,11 @@
 /* tablet */
 @media (max-width: 800px) {
   .skills > p {
+      /* border: 1px solid red; */
+    padding: 3rem;
     margin: 0 3rem;
-    font-size: 2rem;
-    line-height: 2.75rem;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
   }
 }
 /* mobile */

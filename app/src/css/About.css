@@ -55,5 +55,13 @@ figure > figcaption {
     }
     .photos > figure {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    figure > img {
+        width: 70%;
+        margin: 0 auto;
+        height: auto;
     }
 }
