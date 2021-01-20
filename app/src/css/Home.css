@@ -70,7 +70,8 @@ i {
 /* mobile */
 @media (max-width: 600px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
   .mountain1 {
     bottom: 3vh;
