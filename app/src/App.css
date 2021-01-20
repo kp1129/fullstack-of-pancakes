@@ -1,6 +1,6 @@
 .home {
   position: relative;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   overflow: hidden;
 }
@@ -23,8 +23,6 @@
   z-index: 0;
   width: 100%;
   height: auto;
-  
-
 }
 h1 {
   position: absolute;
@@ -90,7 +88,7 @@ figure > figcaption {
   font-style: italic;
 }
 .skills {  
-  height: 45vh;  
+  height: 50vh;  
   display: flex;
   align-items: center;
   background-color: #000;
@@ -113,6 +111,10 @@ figure > figcaption {
 .footer {
   text-align: center;
   padding: 1em 0;
+  line-height: 2.5em;
+}
+.footer a {
+  color: inherit;
 }
 .navbar {
   width: 50%;

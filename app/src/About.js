@@ -14,7 +14,6 @@ function About() {
         </span>
         )
       </h2>
-
       <p>
         <span role="img" aria-label="cactus">
           🌵
@@ -92,7 +91,7 @@ function About() {
         <span role="img" aria-label="rocket ship">
           🚀
         </span>
-      </p>
+      </p>      
     </div>
   );
 }

@@ -21,7 +21,10 @@ function Home() {
   };
 
   useEffect(() => {
-    make_stars();
+    const timer = setTimeout(() => {
+      make_stars();
+    }, 1000);
+    return () => clearTimeout(timer);
   }, []);
   return (
     <div className="home">

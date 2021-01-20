@@ -35,6 +35,7 @@ function App() {
       styleBody.color = "#fff";
       styleHeader.backgroundColor = "transparent";
       styleFooter.backgroundColor = "transparent";
+      styleFooter.color = "#fff";
       if (home) {
         styleHomeAnimation.backgroundImage =
           "linear-gradient(180deg, #000, #1e1e2e, #26324f)";
@@ -46,6 +47,7 @@ function App() {
       styleBody.color = "#000";
       styleHeader.backgroundColor = "#3e1851";
       styleFooter.backgroundColor = "#fdbaa0";
+      styleFooter.color = "#000";
       if (home) {
         styleHomeAnimation.backgroundImage =
           "linear-gradient(180deg, #3e1851, #b65d9b, #fdbca2, #fe9677)";
