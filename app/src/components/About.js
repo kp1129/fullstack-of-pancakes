@@ -4,6 +4,8 @@ import photo1 from "../images/photo1.jpg";
 import photo2 from "../images/photo2.jpg";
 import photo3 from "../images/photo3.jpg";
 
+import '../css/About.css';
+
 function About() {
   return (
     <div className="about">

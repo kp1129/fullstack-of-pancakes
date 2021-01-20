@@ -1,0 +1,59 @@
+.about {
+  min-height: 100vh;
+  width: 80vw;
+  max-width: 1000px;
+  padding: 2rem 0;
+  margin: 0 auto;
+  line-height: 2.5rem;  
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.about > p {
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.photos > figure {
+  width: 30%;
+  max-width: 300px;
+  margin: 0.5rem;
+}
+figure > img {
+  width: 100%;
+  height: auto;
+}
+figure > figcaption {
+  text-align: center;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+.twitter-tweet {
+  margin: 0 auto;
+}
+/* MEDIA QUERIES */
+/* tablet */
+@media (max-width: 800px) {
+    h2 {
+        font-size: 2.25rem;
+    }
+    .about {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+}
+/* mobile */
+@media (max-width: 600px) {
+    .photos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .photos > figure {
+        width: 100%;
+    }
+}

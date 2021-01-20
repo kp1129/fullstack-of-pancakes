@@ -1,7 +1,7 @@
 html {
   font-size: 62.5%;
 }
-.home {
+/* .home {
   position: relative;
   height: 90vh;
   width: 100%;
@@ -16,7 +16,6 @@ html {
   height: auto;
   mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0, 0, 0, 0));
   -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0, 0, 0, 0));
-  
 }
 .mountain2 {
   position: absolute;
@@ -35,10 +34,7 @@ h1 {
   color: white;
   font-size: 40px;
 }
-h2 {
-  font-size: 30px;
-  font-weight: 800;
-}
+
 i {
   position: absolute;
   background: #fff;
@@ -58,8 +54,9 @@ i {
     opacity: 0;
     transform: translateX(-10px);
   }
-}
-.about {
+} */
+
+/* .about {
   min-height: 100vh;
   font-size: 1.25em;
   width: 80vw;
@@ -89,7 +86,7 @@ figure > figcaption {
   text-align: center;
   font-size: 0.75em;
   font-style: italic;
-}
+} */
 /* .skills {  
   height: 50vh;  
   display: flex;
@@ -113,9 +110,7 @@ figure > figcaption {
 .footer a {
   color: inherit;
 } */
-.twitter-tweet {
-  margin: 0 auto;
-}
+
 .theme-toggle {
   margin-left: 10px;
   width: 65px;

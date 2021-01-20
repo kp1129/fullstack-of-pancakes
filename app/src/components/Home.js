@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import mountainRange from "../images/mountainrange1.png";
+import '../css/Home.css';
 
 function Home() {
   const make_stars = () => {
