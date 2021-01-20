@@ -18,13 +18,9 @@ function Skills() {
         <span role="img" aria-label="sparkles">
           ✨
         </span>
-        Heroku, Vercel, Netlify), and am currently learning mobile dev on the
-        side (
-        <span role="img" aria-label="sparkles">
-          ✨
-        </span>
-        Flutter).
+        Heroku, Vercel, Netlify), and learning new tech on the go. Check out my projects on Github!
       </p>
+
     </div>
   );
 }

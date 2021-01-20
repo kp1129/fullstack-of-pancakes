@@ -18,6 +18,7 @@ import Footer from "./Footer";
 import "./App.css";
 import "animate.css";
 
+
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [home, setHome] = useState(true);
@@ -27,11 +28,13 @@ function App() {
     const styleHomeAnimation = document.getElementsByClassName("home")[0]
       ?.style;
     const styleHeader = document.getElementsByClassName("header")[0].style;
+    const styleFooter = document.getElementsByClassName("footer")[0].style;
 
     if (darkMode) {
       styleBody.backgroundColor = "#000";
       styleBody.color = "#fff";
       styleHeader.backgroundColor = "transparent";
+      styleFooter.backgroundColor = "transparent";
       if (home) {
         styleHomeAnimation.backgroundImage =
           "linear-gradient(180deg, #000, #1e1e2e, #26324f)";
@@ -42,6 +45,7 @@ function App() {
       styleBody.backgroundColor = "#fff";
       styleBody.color = "#000";
       styleHeader.backgroundColor = "#3e1851";
+      styleFooter.backgroundColor = "#fdbaa0";
       if (home) {
         styleHomeAnimation.backgroundImage =
           "linear-gradient(180deg, #3e1851, #b65d9b, #fdbca2, #fe9677)";
