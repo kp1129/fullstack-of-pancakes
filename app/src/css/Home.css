@@ -22,7 +22,7 @@
   position: absolute;
   transform: scaleX(-1);
   left: 0;
-  bottom: 0;
+  bottom: -0.5vh;
   z-index: 0;
   width: 100%;
   height: auto;
@@ -64,16 +64,19 @@ i {
     font-size: 3.5rem;
   }
   .mountain1 {
-      bottom: 5vh;
+    bottom: 5vh;
   }
 }
 /* mobile */
 @media (max-width: 600px) {
+  .home {
+    height: 80vh;
+  }
   h1 {
     font-size: 2.5rem;
     line-height: 3rem;
   }
   .mountain1 {
     bottom: 3vh;
-}
+  }
 }

@@ -4,7 +4,7 @@ import photo1 from "../images/photo1.jpg";
 import photo2 from "../images/photo2.jpg";
 import photo3 from "../images/photo3.jpg";
 
-import '../css/About.css';
+import "../css/About.css";
 
 function About() {
   return (
@@ -22,7 +22,6 @@ function About() {
         </span>{" "}
         I'm based in the sunny Phoenix, Arizona, and I build full stack apps.
       </p>
-
       <div className="photos">
         <figure>
           <img src={photo1} alt="monsoon clouds over mountains" />
@@ -45,16 +44,18 @@ function About() {
           </figcaption>
         </figure>
       </div>
-
       <p>
         My path into tech was a bit nontraditional.{" "}
         <span role="img" aria-label="graduation cap">
           🎓
         </span>
         Like many college students, all I knew for sure was that I wanted to
-        help people. I thought I could fulfill that desire by becoming a
-        psychologist. Soon I realized that helping people was only part of the
-        puzzle;{" "}
+        help people.
+      </p>
+      <p>
+        {" "}
+        I thought I could fulfill that desire by becoming a psychologist. Soon I
+        realized that helping people was only part of the puzzle;{" "}
         <span role="img" aria-label="face with monocle">
           🧐
         </span>
@@ -62,15 +63,18 @@ function About() {
         effective solutions, and to make sense of the things we still barely
         understand.
       </p>
-
       <p>
         My desire to explore and innovate brought me to work at Y Combinator
-        startups.{" "}
+        startups
         <span role="img" aria-label="unicorn">
           🦄
         </span>
-        There, I helped grow superstar teams that were truly building the
-        future! I caught the programming bug instantly.{" "}
+        , where I helped grow superstar teams that were truly building the
+        future!
+      </p>
+      <p>
+        {" "}
+        I caught the programming bug instantly.{" "}
         <span role="img" aria-label="laptop">
           💻
         </span>
@@ -79,9 +83,7 @@ function About() {
         that teaches full stack JavaScript development, computer science
         fundamentals, and includes a hackathon-style internship.
       </p>
-
       <Tweet className="my-tweet" tweetId="1253452257074352128" />
-
       <p>
         Outside of writing code, I like to travel and I read a ton of books.{" "}
         <span role="img" aria-label="stack of books">
@@ -93,7 +95,7 @@ function About() {
         <span role="img" aria-label="rocket ship">
           🚀
         </span>
-      </p>      
+      </p>
     </div>
   );
 }
