@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import mountainRange from "./images/mountainrange1.png";
+import mountainRange from "../images/mountainrange1.png";
 
 function Home() {
   const make_stars = () => {

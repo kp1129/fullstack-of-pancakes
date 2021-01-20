@@ -1,0 +1,21 @@
+.skills {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+}
+.skills > p {
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+  padding: 0 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #fff;
+}
+/* MEDIA QUERIES */
+/* tablet */
+@media (max-width: 800px) {
+  .skills > p {
+      margin: 0 3rem;
+  }
+}

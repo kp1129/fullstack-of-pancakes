@@ -3,9 +3,12 @@ import React, { useState, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  NavLink,
+  Route
 } from "react-router-dom";
+
+// styles
+import "../App.css";
+import "animate.css";
 
 // components
 import Header from "./Header";
@@ -13,11 +16,6 @@ import Home from "./Home";
 import Skills from "./Skills";
 import About from "./About";
 import Footer from "./Footer";
-
-// styles
-import "./App.css";
-import "animate.css";
-
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
