@@ -48,11 +48,11 @@
 }
 /* mobile */
 @media (max-width: 600px) {
+    .header {
+        padding: 1rem 0;
+    }
     .navbar {
         padding: 0 1rem;
     }
-   .navbar a {
-       font-size: 1.1rem;
-   }
 }
 
