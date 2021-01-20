@@ -89,9 +89,9 @@ function About() {
         <span role="img" aria-label="stack of books">
           📚
         </span>
-        My record so far is 116 books in one year (it was a crazy year). I'm
-        always exploring something new, and I want to help people by building
-        the tech of the future.{" "}
+        My record so far is 116 books in one year (to be honest, I don't think I
+        will ever top this). I'm always exploring something new, and I want to
+        help people by building the tech of the future.{" "}
         <span role="img" aria-label="rocket ship">
           🚀
         </span>
