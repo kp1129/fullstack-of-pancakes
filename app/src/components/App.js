@@ -18,9 +18,11 @@ import About from "./About";
 import Footer from "./Footer";
 
 function App() {
+  // controls dark mode throughout the app
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
+    // controls light/dark mode styling
     const styleBody = document.body.style;   
 
     if (darkMode) {

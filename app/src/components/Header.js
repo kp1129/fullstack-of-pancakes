@@ -3,12 +3,15 @@ import { NavLink } from "react-router-dom";
 import '../css/Header.css';
 
 function Header({ darkMode, setDarkMode }) {
+  
   const handleClick = () => {
     setDarkMode(!darkMode);
   };
 
   useEffect(() => {
+    // controls light/dark mode styling
     const styleHeader = document.getElementsByClassName("header")[0].style;
+
     if (darkMode){
       styleHeader.backgroundColor = "transparent";
     }

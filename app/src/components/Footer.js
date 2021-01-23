@@ -4,8 +4,9 @@ import '../css/Footer.css';
 function Footer({ darkMode }) {
 
   useEffect(() => {
+    // controls light/dark mode styling
     const styleFooter = document.getElementsByClassName("footer")[0].style;
-    
+
     if (darkMode) {
       styleFooter.backgroundColor = "transparent";
       styleFooter.color = "#fff"
