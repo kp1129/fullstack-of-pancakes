@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import '../css/Footer.css';
 
-function Footer() {
+function Footer({ darkMode }) {
+
+  useEffect(() => {
+    const styleFooter = document.getElementsByClassName("footer")[0].style;
+    
+    if (darkMode) {
+      styleFooter.backgroundColor = "transparent";
+      styleFooter.color = "#fff"
+    } else {
+      styleFooter.backgroundColor = "#fdbaa0";
+      styleFooter.color = "#000";
+    }
+  }, [darkMode])
+    
   return (
     <div className="footer">
       <p>

@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import mountainRange from "../images/mountainrange1.png";
-import '../css/Home.css';
+import "../css/Home.css";
 
-function Home() {
+function Home({ darkMode }) {
   const make_stars = () => {
     for (let i = 0; i <= 99; i++) {
       let star = document.createElement("i");
@@ -27,6 +27,22 @@ function Home() {
     }, 1000);
     return () => clearTimeout(timer);
   }, []);
+
+  useEffect(() => {
+    const styleHomeAnimation = document.getElementsByClassName("home")[0].style;
+    if (darkMode) {
+      styleHomeAnimation.backgroundImage =
+        "linear-gradient(180deg, #000, #1e1e2e, #26324f)";
+      styleHomeAnimation.webkitBackgroundImage =
+        "linear-gradient(180deg, #000, #1e1e2e, #26324f)";
+    } else {
+      styleHomeAnimation.backgroundImage =
+        "linear-gradient(180deg, #3e1851, #b65d9b, #fdbca2, #fe9677)";
+      styleHomeAnimation.webkitBackgroundImage =
+        "linear-gradient(180deg, #3e1851, #b65d9b, #fdbca2, #fe9677)";
+    }
+  }, [darkMode]);
+
   return (
     <div className="home">
       <h1 className="animate__animated animate__pulse">

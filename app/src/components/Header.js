@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import '../css/Header.css';
 
-function Header({ darkMode, setDarkMode, setHome }) {
-  const handleHomeClick = () => {
-    setHome(true);
-  };
-  const handleNonHomeClick = () => {
-    setHome(false);
-  };
+function Header({ darkMode, setDarkMode }) {
   const handleClick = () => {
     setDarkMode(!darkMode);
   };
+
+  useEffect(() => {
+    const styleHeader = document.getElementsByClassName("header")[0].style;
+    if (darkMode){
+      styleHeader.backgroundColor = "transparent";
+    }
+    else {
+      styleHeader.backgroundColor = "#3e1851";
+    }
+  }, [darkMode])
+
   return (
     <div className="header">
       {/* dark mode toggle */}
@@ -23,10 +28,10 @@ function Header({ darkMode, setDarkMode, setHome }) {
       </div>
       {/* navigation */}
       <div className="navbar">
-        <NavLink onClick={handleHomeClick} exact to="/">
+        <NavLink exact to="/">
           HOME
         </NavLink>
-        <NavLink onClick={handleNonHomeClick} to="/about">
+        <NavLink to="/about">
           ABOUT
         </NavLink>
         <a
