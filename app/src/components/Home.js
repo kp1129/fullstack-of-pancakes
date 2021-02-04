@@ -5,8 +5,9 @@ import "../css/Home.css";
 function Home({ darkMode }) {
   // function to generate stars
   const make_stars = () => {
-    for (let i = 0; i <= 99; i++) {
+    for (let i = 0; i <= 90; i++) {
       let star = document.createElement("i");
+      star.className = "star";
       // random x and y coordinates
       let x = Math.floor(Math.random() * window.innerWidth);
       let y = Math.floor(Math.random() * (window.innerHeight * 0.4));
@@ -26,11 +27,12 @@ function Home({ darkMode }) {
   };
 
   useEffect(() => {
-    // controls adding stars to the page 
-    // 1 second after component mounts
+    // controls adding stars to the page
+    // half a second after component mounts
     const timer = setTimeout(() => {
       make_stars();
-    }, 1000);
+    }, 500);
+
     return () => clearTimeout(timer);
   }, []);
 
@@ -53,14 +55,10 @@ function Home({ darkMode }) {
 
   return (
     <div className="home">
-      <h1 className="animate__animated animate__pulse">
+      <h1 className="animate__animated animate__zoomIn">
         Hi! I'm Katya and I'm a software engineer!
       </h1>
-      <img
-        className="mountain1 animate__animated animate__fadeInBottomRight"
-        src={mountainRange}
-        alt="moutain range"
-      />
+      <img className="mountain1" src={mountainRange} alt="moutain range" />
       <img className="mountain2" src={mountainRange} alt="moutain range" />
     </div>
   );
